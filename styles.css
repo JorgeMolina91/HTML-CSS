@@ -1,0 +1,19 @@
+div{
+    border: solid black 10px;
+    display: inline-block;
+    margin: 10px 10px;
+    width: 100px;
+    height: 100px;
+}
+div:hover{
+    border: solid 10px gray;
+    cursor: pointer;
+    width: 105px;
+    height: 105px;
+    transition: 0.5s;
+}
+button{
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
