@@ -428,3 +428,71 @@ El tamaño total del elemento será de 210px en ambos ejes, donde la suma fue: 1
 **Propiedad box-sizing**
 Esta propiedad deja fijos el alto y el ancho, y va modificando las medidas dependiendo del tamaño del elemento, el padding, el margin y el border que tenga, es decir, que si le damos al elemento un alto de 200PX y un ancho de 200px, pero ademas le agregamos un padding de 20px, el elemento ya no será de 200px, sino que se le restarán esos 20px, y ahora medirá 180px... Lo que quiere decir que deja fija la medida de alto y ancho y modifica los valores dependiendo de los valores de margin, padding y border que se le den al elemento.
 
+
+## Colapso de Margenes
+El colapso de márgenes sucede cuando dos elementos ***bloque*** adyacentes tienen un determinado valor de margin, entonces estos márgenes se solapan (mezclan) en un solo valor, el mayor de ambos.
+
+En flexbox y grid no ocurre el colapso de márgenes. Cuida los márgenes que colocas en los elementos de tipo bloque.
+
+## Posicionamiento
+El posicionamiento en CSS consiste en cómo un elemento se situará, con respecto a su elemento padre y al flujo normal del documento. El flujo normal del documento es el orden de los elementos establecidos en el HTML.
+La posición del elemento se la define con la propiedad position, mediante los siguientes valores:
+- static
+- relative
+- absolute
+- sticky
+
+**Propiedades de posición**
+Además de la propiedad position, existen cuatro propiedades del elemento de acuerdo a su posición con respecto a su padre, estas son: top (arriba), bottom (debajo), left (izquierda) y right (derecha).
+```Javascript
+div {
+    top: 10px;
+    bottom: 15px;
+    left: 20px;
+    right: 10px;
+}
+```
+### Static
+ es el valor por defecto de todo elemento HTML, consiste en respetar el flujo normal del documento donde las propiedades de posición no pueden ser establecidas.
+ ### Relative
+Elementos posicionados relativamente son desplazados una cantidad dada de su posición normal en el documento, pero sin que su desplazamiento afecte a otros elementos.
+### Absolute
+Los elementos posicionados relativamente se mantienen en el flujo normal del documento. Por el contrario, un elemento posicionado absolutamente es removido del flujo de esta manera, los demás elementos se posicionan como si el mismo no existiera. El elemento posicionado absolutamente se posiciona relativamente a su ancestro posicionado más cercano (es decir, el ancestro más cercano que no es static). Si no hay ningún ancestro posicionado se ubica relativo al bloque contenedor (en-US) inicial. En el ejemplo siguiente, la caja "Two" no tiene un ancestro posicionado, por lo tanto se posiciona relativo al <body> del documento.
+### Fixed
+El posicionamiento fijo es similar al posicionamiento absoluto, con la excepción de que el bloque contenedor del elemento es el viewport. Esto puede usarse para crear un elemento flotante que se mantiene en la misma posición independientemente del desplazamiento. Se debe tener cuidado con los espacios de los otros elementos porque, al quedarse fija, puede que se superponga a elementos cercanos.
+### Sticky
+El posicionamiento sticky se mueve hasta donde llega su contenedor. Si no tiene contenedor se muevo con el viewport. Se usa para crear un elemento flotante que se mantiene en la misma posición independientemente del desplazamiento. Este elemento ocupa espacio, por lo que no se va a tener inconvenientes con que se superponga a otros elementos cercanos.
+
+**Z-index y el contexto de apilamiento**
+El contexto de apilamiento consiste en la superposición de capas o elementos a lo largo del eje Z del navegador. Esto es importante para evitar que un elemento esté ocultando a otro.
+
+### Qué son los planos y ejes
+El navegador está constituido de tres planos y ejes: el ancho o X; el alto o Y; y el de profundidad o Z.
+El eje X positivo está hacia la derecha; el eje Y positivo está hacia abajo; y el eje Z positivo está hacia el usuario.
+### Qué es la propiedad z-index
+El contexto de apilamiento se configura con la propiedad z-index.
+Por defecto, todos los elementos tienen un valor auto, es decir, el orden está definido por la estructura del HTML. Los primeros elementos estarán detrás y los últimos estarán de frente.
+Si se establece un valor positivo, este elemento se sitúa por delante de los demás. Si se establece un valor negativo, se sitúa por detrás.
+Si un elemento tiene un z-index mayor a otro, estará por delante. Sin embargo, si un elemento que tiene un z-index menor a otros, sus hijos nunca estarán por encima, aunque su z-index sea mayor.
+
+
+## Propiedades y valores de CSS más usados
+Las propiedades CSS más usadas son las siguientes, separadas en secciones comunes, algunas ya las conocemos:
+**layout**
+Display
+**modelo de caja**
+Margin
+Padding
+Border -> La propiedad que establece bordes redondeados es: border-radius.
+**tamaños**
+Width
+Height
+**texto**
+Font-size -> establece un tamaño de fuente
+Font-weight -> establece el resaltado del texto, con valores de 100 a 900 en intervalos de 100; donde 100 es delgada y 900 es negrita.
+Font-family -> establece el tipo de fuente.
+Text-align -> establece la posición del texto: right, left, center y justify.
+Color -> establece el color del texto.
+**de fondo**
+Background
+Background-color
