@@ -1,15 +1,148 @@
 section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    position: relative;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 0px 20px;
+    width: 500px;
+    height: 600px;
+    display: inline-block;
+    left: 30%;
+    overflow: hidden; 
 }
-
 .card{
+    align-items: center;
+}
+.profile{
+    border-radius: 50%;
+    padding: 10px 5px 0px 5px;
+    background: #E9F0E9;
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    top: 170px;
+    left: 80px;
+}
+.nacionalidad{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 250px;
+    left: 170px;
+    border-radius: 50%;
+}
+.name{
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   position: absolute;
+   top: 120px;
+   left: 55px;
+}
+.description{
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+   position: absolute;
+   top: 280px;
+   left: 50px;
+}
+.skills-title{
+   font-size: 20px;
+   font-family: 'Poppins', sans-serif;
+   position: absolute;
+   bottom: 55px;
+   right: 100px;
+}
+.skills{
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+   position: absolute;
+   bottom: 90px;
+   right: 70px;
+}
+.github{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 170px;
+}
+.linkedin{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10px;
+    left: 230px;
+}
+.shape1{
+    border-radius: 7%;
+    width: 500px;
+    height: 500px;
+    bottom: 430px;
+    left: 200px;
+    position: absolute;
+    background-color: hsl(0, 6%, 25%);  ;   
+    transform: rotate(45deg);
+    z-index: 0;
+}
+.line1{
+    position: absolute;
+    background: #ffb2b2;
+    right: 215px;
+    top: 325px;
+    width: 10px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(270deg);
+}
+.line1-5{
+    position: absolute;
+    background: #ffb2b2;
+    right: 235px;
+    top: 251px;
+    width: 10px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(270deg);
+}
+.shape2{
+    border-radius: 10%;
     width: 300px;
     height: 300px;
-    background: papayawhip;
-    border-radius: 20px;
+    top: 350px;
+    right: 370px;
+    position: absolute;
+    background-color: hsl(0, 6%, 25%);   
+    transform: rotate(45deg);
 }
-.card img{
-    width: 100%;
+.line2{
+    position: absolute;
+    background: #ffb2b2;
+    left: 120px;
+    bottom: 130px;
+    width: 10px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(270deg);
+}
+.line2-5{
+    position: absolute;
+    background: #ffb2b2;
+    left: 120px;
+    bottom: 62px;
+    width: 10px;
+    height: 200px;
+    border-radius: 20px;
+    transform: rotate(270deg);
+}
+.contact{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 5px;
+   border-radius: 10px 0 0 0;
+   background-color: hsl(0, 6%, 25%);
+}
+.contact a{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;  
+    color: rgb(233, 230, 230);
 }
