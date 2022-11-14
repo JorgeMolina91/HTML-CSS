@@ -22,7 +22,7 @@ Los 5 pasos de los motores:
 
 ## HMTL Semántico
 
-El HTML semántico consiste en que cada elemento tenga su propia etiqueta que lo defina correctamente. Sin utilizar etiquetas muy generales, como <div> o <span>.
+El HTML semántico consiste en que cada elemento tenga su propia etiqueta que lo defina correctamente. Sin utilizar etiquetas muy generales, como `<div>` o `<span>`.
 
 **¿Cuáles son las etiquetas semánticas?**
 
