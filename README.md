@@ -6,8 +6,7 @@
 Es básicamente pasar los archivos que escrinimos (HTML y CSS) y traducirlos a pixeles.
 
 |  Navegador  |    Motor    |
-| ----------- | ----------- |
-|   :-----:   |   :-----:   | 
+| ----------- | ----------- | 
 |   Chrome    |    Blink    |
 |    Edge     |  Edge HTML  |
 |   Safari    |    Webkit   |
